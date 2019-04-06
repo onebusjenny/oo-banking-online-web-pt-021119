@@ -13,8 +13,10 @@ class BankAccount
    
    def deposit(money)
      @balance = 1000 + money
-    
-    
    end
      
+    def display_balance
+      "Your balance is"
+    
+    
 end
