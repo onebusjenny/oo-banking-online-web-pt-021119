@@ -18,7 +18,8 @@ end
 end
 
   def execute_transaction
-    if @sender.
+    if @sender.balance < @amount
+      
   end
 
 end
