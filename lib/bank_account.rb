@@ -20,10 +20,7 @@ class BankAccount
     end
     
     def valid?
-      if @balance > 0 || @status 
-        "it is valid"
-      else
-        "not valid"
-      end
+    @balance > 0 || @status 
+       
     end
 end
