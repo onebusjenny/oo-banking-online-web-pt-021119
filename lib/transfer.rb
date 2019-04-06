@@ -21,9 +21,12 @@ end
     if @sender.balance < @amount
       @status = "rejected"
       puts "Transaction rejected. Please check your amount balance"
-    else if "completed"
-      @sender.
-      
-      
+    else if @status == "completed"
+  else
+    @sender.deposit( @amount *-1)
+    @sender.deposit(@amount)
+    @status = "complete"
+    end
+  end
   
 end
