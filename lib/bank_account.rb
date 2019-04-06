@@ -15,8 +15,8 @@ class BankAccount
      @balance = 1000 + money
    end
      
-    def display_balance
-      "Your balance is"
+    def display_balance(balance)
+      "Your balance is $#{@balance}."
     
     
 end
