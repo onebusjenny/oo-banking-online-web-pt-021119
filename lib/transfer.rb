@@ -33,7 +33,7 @@ def execute_transaction
   end
   
  def reverse_transfer
-   
+    @sender.balance << @receiver.balance 
    
     if @status == "complete"
       @sender.deposit( @amount ) 
