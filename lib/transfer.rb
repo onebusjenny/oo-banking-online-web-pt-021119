@@ -32,6 +32,9 @@ def execute_transaction
     end
   end
   
+  def withdrawal
+    
+  end
     def reverse_transfer
     if valid? && receiver.balance > amount && status == "complete"
       sender.deposit(amount)
