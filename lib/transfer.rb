@@ -22,7 +22,7 @@ end
       @status = "rejected"
       puts "Transaction rejected. Please check your amount balance"
     else if @status == "completed"
-      "Transaction is completed"
+      puts "Transaction is completed"
   else
     @sender.deposit( @amount *-1)
     @sender.deposit(@amount)
