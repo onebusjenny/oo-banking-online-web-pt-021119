@@ -33,6 +33,8 @@ def execute_transaction
   end
   
  def reverse_transfer
+   if @reciever.balance > @amount
+     
     @sender.balance << @receiver.balance 
    
     if @status == "complete"
