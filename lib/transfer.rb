@@ -18,6 +18,10 @@ end
 end
 
   def execute_transaction
-    if @sender.
+    if @sender.balance < @amount
+      @status = "rejected"
+    else if "completed"
+      
+      
   
 end
