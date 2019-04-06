@@ -33,12 +33,7 @@ def execute_transaction
   end
   
   def withdrawal
-     if pin_number == @pin
-        @balance -= amount
-        puts "Withdraw #{amount}. New balance: $#{@balance}."
-    else
-        puts = pin_error
-      end
+    
   end
     def reverse_transfer
     if valid? && receiver.balance > amount && status == "complete"
