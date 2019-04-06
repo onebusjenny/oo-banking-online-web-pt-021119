@@ -28,7 +28,7 @@ class BankAccount
   end
   
   def close_account
-    @statue = "closed"
+    @status = "closed"
   end
-  end
+  
 end
