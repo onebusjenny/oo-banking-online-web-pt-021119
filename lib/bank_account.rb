@@ -19,4 +19,6 @@ class BankAccount
       "Your balance is $#{@balance}."
     end
     
+    def valid?
+      if @balance > 0
 end
