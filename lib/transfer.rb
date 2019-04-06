@@ -17,17 +17,15 @@ end
     end
 end
 
-  def execute_transaction
-    if @sender.balance < @amount
-      @status = "rejected"
-      puts "Transaction rejected. Please check your amount balance"
-    else if @status == "completed"
-      puts "Transaction is completed"
-  else
-    @sender.deposit( @amount *-1)
-    @sender.deposit(@amount)
-    @status = "complete"
-    end
  
-  
+if @sender.balance < @amount
+      @status = "rejected"
+      elsif @status == "complete"
+      puts "Transaction was already excuted"
+    else
+      @sender.deposit( @amount * -1 ) 
+      @receiver.deposit( @amount )
+      @status = "complete"
+    end
+  end
 end
