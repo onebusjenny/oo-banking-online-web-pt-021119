@@ -37,7 +37,6 @@ def execute_transaction
    
     if @status == "complete"
       @receiver << @sender.deposit( @amount ) 
-     
       @status = "reversed"
     end
   end
