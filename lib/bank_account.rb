@@ -20,7 +20,7 @@ class BankAccount
     end
     
     def valid?
-    @balance > 0 || @status 
+    self.balance > 0 || self.status = "open" 
        
     end
 end
