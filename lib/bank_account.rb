@@ -20,7 +20,7 @@ class BankAccount
     end
     
     def valid?
-    self.balance == 
+    self.balance == 1000 || self.status == "open"
        
     end
 end
