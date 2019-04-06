@@ -28,6 +28,6 @@ end
     @sender.deposit(@amount)
     @status = "complete"
     end
-  end
+ 
   
 end
